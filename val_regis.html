@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: calibri, Helvetica, sans-serif;  
+  background-color: red;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: white;  
+}  
+  
+input[type=text],input[type=password],textarea {  
+  width: 50%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus,input[type=password]:focus{  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registrationbutton {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registrationbutton:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1> Registeration Form</h1> </center>    
+  <hr><label> FIRST NAME: </label> <br>  
+<input type="text" id="firstname" placeholder= "Firstname" size="10" required /><br>      
+<label> MIDDLE NAME: </label><br> 
+<input type="text" id="middlename" placeholder= "Middlename" size="10" required /><br>      
+<label> LAST NAME: </label><br>  
+<input type="text"id="lastname" placeholder="Lastname" size="10"required /> <br>  
+<label> FATHER NAME </label> <br>  
+<input type="text" id="fname" placeholder= "Father name" size="10" required /><br>      
+<label> MOTHER NAME: </label><br>    
+<input type="text" id="mname" placeholder="Mother name" size="10"required />   
+<div>  
+<label>   
+Course :  
+</label>   
+<select >  
+<option value="Course">Course</option>  
+<option value="BCA">BCA</option>  
+<option value="BBA">BBA</option>  
+<option value="B.Tech">B.Tech</option>  
+<option value="MBA">MBA</option>  
+<option value="MCA">MCA</option>
+<option value="M.Tech">M.Tech</option> 
+</select>  
+</div>  
+<label> ADHAAR NO.: </label><br>    
+<input type="text" id="adhaar" placeholder="Unique Adhaar number" size="10"required /> <br>  
+<label>Phone No :  </label> <br>   
+<input id="pno" type="text" name="phone" placeholder="phone number" size="10" required/> <br>  
+<label>   
+ <br><center><button onclick="submission">Submit</button></center>   
+</form>  
+</body> 
+<script>
+function submission()
+{
+  var firstname=document.getElementById("firstname").value;
+  
+  var middlename=document.getElementById("middlename").value;
+
+  var lastname=document.getElementById("lastname").value;
+ 
+  var fathername=document.getElementById("fathername").value;
+  
+  var mothername=document.getElementById("mothername").value;
+  
+  var adharnumber=document.getElementById("adhaarnumber").value;
+  
+  var phonenumber=document.getElementById("phonenumber").value;
+
+  var arr = [];
+
+    if (!arr.contains(a)) 
+    {
+      arr.push(a);
+      alert('you have successfully registered');
+      
+    } 
+    else
+    {
+      alert('the adhaar number already exists');
+      
+    }
+    console.log(arr);
+}
+</script> 
+</html>
